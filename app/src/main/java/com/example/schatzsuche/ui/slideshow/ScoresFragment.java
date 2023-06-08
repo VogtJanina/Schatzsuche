@@ -1,4 +1,4 @@
-package com.example.schatzsuche.ui.gallery;
+package com.example.schatzsuche.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.schatzsuche.databinding.FragmentGalleryBinding;
+import com.example.schatzsuche.databinding.FragmentScoresBinding;
 
-public class GalleryFragment extends Fragment {
+public class ScoresFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentScoresBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        ScoresViewModel slideshowViewModel =
+                new ViewModelProvider(this).get(ScoresViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentScoresBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textScores;
+        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
