@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.schatzsuche.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.example.schatzsuche.ui.gallery.PlayFragment"
+        android:label="@string/menu_play"
+        tools:layout="@layout/fragment_play" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.schatzsuche.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.schatzsuche.ui.slideshow.ScoresFragment"
+        android:label="@string/menu_scores"
+        tools:layout="@layout/fragment_scores" />
 </navigation>
