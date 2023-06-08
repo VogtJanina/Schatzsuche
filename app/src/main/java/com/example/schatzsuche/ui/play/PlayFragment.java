@@ -1,4 +1,4 @@
-package com.example.schatzsuche.ui.gallery;
+package com.example.schatzsuche.ui.play;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

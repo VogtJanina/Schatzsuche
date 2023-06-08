@@ -1,4 +1,4 @@
-package com.example.schatzsuche.ui.gallery;
+package com.example.schatzsuche.ui.play;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
