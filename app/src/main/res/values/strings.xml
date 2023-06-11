@@ -12,4 +12,5 @@
     <string name="menu_scores">Scores</string>
 
     <string name="hideTreasure">HIDE TREASURE</string>
+    <string name="searchTreasure">SEARCH TREASURE</string>
 </resources>
