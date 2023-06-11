@@ -1,13 +1,8 @@
 package com.example.schatzsuche;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -31,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        seaMonster = findViewById(R.id.ivSeaMonsterAnim);
-
-        Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_rotate);
-        seaMonster.startAnimation(anim);
 
         setSupportActionBar(binding.appBarMain.toolbar);
 
